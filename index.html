@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABC Zoo Trail — Learn Your Alphabet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <span class="badge">Little Explorers</span>
+    <h1>🦁 ABC Zoo Trail</h1>
+    <p>Tap a letter, meet its friend, and hear it out loud!</p>
+  </header>
+
+  <div class="trail">
+    <span class="trail-label">Trail progress</span>
+    <div class="trail-track"><div class="trail-fill" id="trailFill"></div></div>
+    <span class="trail-count" id="trailCount">0 / 26</span>
+  </div>
+
+  <div class="card">
+
+    <div class="search-row">
+      <input type="text" id="t1" maxlength="1" placeholder="A-Z" autocomplete="off">
+      <button id="learnBtn">Learn 🚀</button>
+    </div>
+    <p class="hint">Type a letter and press Enter, or tap one below</p>
+
+    <div class="grid" id="grid"></div>
+
+    <div class="flashcard" id="flashcard">
+      <div class="placeholder-text" id="placeholder">🐾 Pick a letter to start your trail!</div>
+    </div>
+
+    <button class="listen-btn" id="listenBtn" disabled>🔊 Hear it again</button>
+
+  </div>
+
+  <footer>✨ Every letter is a new friend. Keep exploring! ✨</footer>
+
+</div>
+
+<div class="balloon-layer" id="balloonLayer"></div>
+
+<div class="celebrate-overlay" id="celebrateOverlay">
+  <div class="celebrate-box">
+    <h2>🎉 You Finished the Trail!</h2>
+    <p>You met all 26 letters from A to Z. You're an Alphabet Champion!</p>
+    <button id="closeCelebrate">Yay! 🐾</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
